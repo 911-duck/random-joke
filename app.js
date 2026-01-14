@@ -8,10 +8,17 @@ async function generate(){
 }
 
 function display(joke){
-    SPAN.innerHTML = "(" + joke.type + ") " +joke.setup
-    setTimeout(()=>{SPAN.innerHTML += "<br>"+joke.punchline},1000)
+    SPAN.innerHTML += "<br>- (" + joke.type + ") " +joke.setup
+    setTimeout(()=>{SPAN.innerHTML += "<br>"+joke.punchline+"<br>"
+BUTTON.addEventListener('click',listener)
+
+    },1000)
 }
 
-BUTTON.addEventListener('click',async e=>{
+async function listener(){
+BUTTON.removeEventListener('click',listener)
+
     display(await generate())
-})
+}
+
+BUTTON.addEventListener('click',listener)
