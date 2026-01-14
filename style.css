@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    padding: 5px 15px;
+    background-color: rgb(70, 70, 70);
+    transform: scale(1.2);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.25s;
+}
+
+button:active{
+    transform: scale(1);
+
+    background-color: rgb(110, 110, 110);
+
+}
+
+p{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    text-align: center;
+}
